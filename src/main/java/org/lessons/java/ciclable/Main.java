@@ -9,7 +9,7 @@ public class Main {
 		IntContainer numbers = new IntContainer(numList);
 		
 		
-		for(int i = 0; i < numList.length; i++) {
+		for(int i = 0; i < numbers.getIntArray().length; i++) {
 			
 			
 			if(numbers.hasStillElements()) {
@@ -20,7 +20,36 @@ public class Main {
 				System.out.println("L'array non ha più elementi in coda\nUlteriori elaborazioni faranno ripartire il ciclo dalla prima posizione");
 			}
 			
-			System.out.println(numbers.getNextNumber());
+			System.out.println(numbers.getNextNumber() + "\n");
+			
+		}
+		
+		
+		
+		//Create a new IntContainer object and populate it with the addElement method
+		
+		
+		IntContainer numbers2 = new IntContainer();
+		
+		numbers2.addElement(37);
+		numbers2.addElement(15);
+		numbers2.addElement(18);
+		
+		
+		System.out.println("SECONDA STAMPA");
+		
+		for(int i = 0; i < numbers2.getIntArray().length ; i++) {
+			
+			
+			if(numbers2.hasStillElements()) {
+				
+				System.out.println("L'array ha ancora elementi in coda");
+			}else {
+				
+				System.out.println("L'array non ha più elementi in coda\nUlteriori elaborazioni faranno ripartire il ciclo dalla prima posizione");
+			}
+			
+			System.out.println(numbers2.getNextNumber() + "\n");
 			
 		}
 
