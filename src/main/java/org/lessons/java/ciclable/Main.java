@@ -12,15 +12,15 @@ public class Main {
 		for(int i = 0; i < numbers.getIntArray().length; i++) {
 			
 			
+			System.out.println(numbers.getNextNumber());
+			
 			if(numbers.hasStillElements()) {
 				
-				System.out.println("L'array ha ancora elementi in coda");
+				System.out.println("L'array ha ancora elementi da restituire\n");
 			}else {
 				
-				System.out.println("L'array non ha più elementi in coda\nUlteriori elaborazioni faranno ripartire il ciclo dalla prima posizione");
+				System.out.println("L'array non ha più elementi da restituire\n");
 			}
-			
-			System.out.println(numbers.getNextNumber() + "\n");
 			
 		}
 		
@@ -36,20 +36,20 @@ public class Main {
 		numbers2.addElement(18);
 		
 		
-		System.out.println("SECONDA STAMPA");
+		System.out.println("SECONDA STAMPA\n");
 		
-		for(int i = 0; i < numbers2.getIntArray().length ; i++) {
+		for(int i = 0; i < numbers2.getIntArray().length; i++) {
 			
+			
+			System.out.println(numbers2.getNextNumber());
 			
 			if(numbers2.hasStillElements()) {
 				
-				System.out.println("L'array ha ancora elementi in coda");
+				System.out.println("L'array ha ancora elementi da restituire\n");
 			}else {
 				
-				System.out.println("L'array non ha più elementi in coda\nUlteriori elaborazioni faranno ripartire il ciclo dalla prima posizione");
+				System.out.println("L'array non ha più elementi da restituire\n");
 			}
-			
-			System.out.println(numbers2.getNextNumber() + "\n");
 			
 		}
 
