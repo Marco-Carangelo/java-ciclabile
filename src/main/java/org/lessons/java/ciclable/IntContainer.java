@@ -17,6 +17,14 @@ public class IntContainer {
 	
 	//Getters and setters
 	
+	public int[] getIntArray() {
+		return intArray;
+	}
+
+	public void setIntArray(int[] intArray) {
+		this.intArray = intArray;
+	}
+
 	public int getIndex() {
 		return index;
 	}
@@ -61,6 +69,9 @@ public class IntContainer {
 		
 		return stillElements;
 	}
+	
+	
+	
 	
 	
 
