@@ -43,31 +43,28 @@ public class IntContainer {
 		this.index = index;
 	}
 	
+	
+	
+	
 	//Class methods
 	
 	public int getNextNumber() {
 		
 		int number = this.intArray[getIndex()];
-		
-		if(index < this.intArray.length - 1) {
 			
-			setIndex(this.index + 1 );
+		setIndex(this.index + 1 );
 			
-		}else {
-			
-			setIndex(0);
-		
-		}
-		
 		return number;
 	}
+	
+	
 	
 	
 	public boolean hasStillElements() {
 		
 		boolean stillElements;
 		
-		if(index < this.intArray.length - 1) {
+		if(index < this.intArray.length ) {
 			
 			stillElements = true;
 			
@@ -79,6 +76,10 @@ public class IntContainer {
 		
 		return stillElements;
 	}
+	
+	
+	
+	
 	
 	public void addElement(int newInt) {
 		
