@@ -45,6 +45,23 @@ public class IntContainer {
 	}
 	
 	
+	public boolean hasStillElements() {
+		
+		boolean stillElements;
+		
+		if(index < this.intArray.length - 1) {
+			
+			stillElements = true;
+			
+		}else {
+			
+			stillElements = false;
+			
+		}
+		
+		return stillElements;
+	}
+	
 	
 
 }
