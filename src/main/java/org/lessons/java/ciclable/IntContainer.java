@@ -25,7 +25,16 @@ public class IntContainer {
 		this.index = index;
 	}
 	
+	//Class methods
 	
+	public int getNextNumber() {
+		
+		int number = this.intArray[getIndex()];
+		
+		setIndex(this.index + 1 );
+		
+		return number;
+	}
 	
 	
 	
