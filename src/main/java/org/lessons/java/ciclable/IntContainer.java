@@ -31,7 +31,15 @@ public class IntContainer {
 		
 		int number = this.intArray[getIndex()];
 		
-		setIndex(this.index + 1 );
+		if(index < this.intArray.length - 1) {
+			
+			setIndex(this.index + 1 );
+			
+		}else {
+			
+			setIndex(0);
+		
+		}
 		
 		return number;
 	}
