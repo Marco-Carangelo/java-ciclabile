@@ -1,5 +1,9 @@
 package org.lessons.java.ciclable;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class IntContainer {
 	
 	//Class fields
@@ -12,6 +16,12 @@ public class IntContainer {
 	public IntContainer(int[] intArray) {
 		
 		this.intArray = intArray;
+		
+	}
+	
+	public IntContainer() {
+		
+		this.intArray = new int[0];
 		
 	}
 	
@@ -70,8 +80,56 @@ public class IntContainer {
 		return stillElements;
 	}
 	
+	public void addElement(int newInt) {
+		
+		int newIntArray[] = new int[intArray.length + 1];
+		
+		for(int i = 0; i < intArray.length; i++) {
+			
+			newIntArray[i] = intArray[i];
+
+		}
+		
+		newIntArray[newIntArray.length - 1] = newInt;
+		
+		intArray = newIntArray;
+		
+	}
 	
 	
+	
+	
+	
+	
+	
+	//Method created only to experiment with Java collection concepts
+	
+//	public void addElementLongWay(int newInt) {
+//		
+//		ArrayList<Integer> intList = new ArrayList<Integer>();
+//		
+//		for(int i = 0; i < intArray.length ; i++)
+//		{
+//			
+//			intList.add(Integer.valueOf(intArray[i]));
+//			
+//		}
+//		
+//		intList.add(Integer.valueOf(newInt));
+//		
+//		int newList[] = new int[intList.size()];
+//		
+//		for(int i = 0; i < newList.length ; i++)
+//		{
+//			
+//			newList[i] = intList.get(i);
+//			
+//		}
+//		
+//		intArray = newList;
+//	
+//		
+//	}
 	
 	
 
